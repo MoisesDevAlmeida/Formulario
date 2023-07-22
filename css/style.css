@@ -1,0 +1,240 @@
+:root {
+
+    --primary: #EB1CCC;
+    --secondary: #95989A;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5D5D5D;
+
+}
+
+* {
+    font-family: "montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*evento form*/
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgb(0, 0, 0, .8)),
+        url("../img/hrz-5.jpg");background: linear-gradient(rgba(0, 0, 0, .8), rgb(0, 0, 0, .8)),
+        url("../img/hrz-4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+
+
+}
+
+#disclainer h2,
+#disclainer .event-date {
+    color: var(--primary);
+}
+
+#disclainer h2 {
+
+    font-size: 1em;
+    margin-bottom: 1em;
+
+}
+
+#disclainer .about-event {
+
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
+#disclainer p {
+
+    font-size: 1.2em;
+    margin-bottom: .3em;
+
+
+}
+
+.corpo {
+    position: relative;
+
+
+}
+
+#disclainer .event-date {
+
+    font-weight: bold;
+}
+
+#subscription-form {
+
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 10px;
+
+
+
+}
+
+#subscription-form p {
+    
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+
+
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/*rélogio*/
+#clock {
+    display: inline-block;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#clock span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    line-height: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+.navigation {
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+    top: 10px;
+
+}
+
+.navigation li {
+    list-style: none;
+    margin: 0, 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.navigation li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navigation li:houver a {
+    color: #EB1CCC;
+
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+
+.search input::placeholder {
+    color: #fff;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 50px;
+    color: #fff;
+    border-radius: 1px solid #fff;
+}
+
+.search {
+    position: relative;
+    width: calc(80% - 20%);
+    height: 35px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    position: absolute;
+    right: 10px 0;
+    border-radius: 1px solid #fff;
+
+}
